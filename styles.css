@@ -242,20 +242,20 @@ body {
 
 .ops-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* FORCED 3-3-3 LAYOUT */
     gap: 3rem;
 }
 
 .ops-card {
     background: #222;
     border: var(--border-thick);
-    padding: 2.5rem 2rem;
+    padding: 3rem 2.5rem; /* Increased padding */
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    height: 100%; /* Ensure all cards in a row have equal height */
+    height: 100%;
 }
 
 .ops-card:nth-child(even) {
