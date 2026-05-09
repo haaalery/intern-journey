@@ -94,10 +94,10 @@ const journalData = {
         skills: ["UI/UX Design", "Technical Leadership", "Task Management", "Prototyping"]
     },
     3: {
-        title: "WEEK 3: PROMPT_ENGINEERING",
-        intel: "Technical Skills Developed: Mastered Prompt Engineering techniques to optimize AI outputs, resulting in a top-tier score during competitive challenges. Additionally, I refined my UI/UX design workflow using Canva, transitioning from basic templates to professional project mockups.",
-        achievements: "Highlight: Secured top-tier scores in Prompt Engineering Challenge. Delivered a high-impact startup pitch that was recognized as the most effective in the cohort.",
-        skills: ["Prompt Engineering", "AI Integration", "Public Speaking", "Startup Pitching"]
+        title: "WEEK 3: UPSKILLING",
+        intel: "Technical Skills Developed: Mastered Prompt Engineering techniques to optimize AI outputs, resulting in a top-tier score during competitive challenges. Additionally, I refined my UI/UX design workflow using Canva, transitioning from basic templates to professional project mockups for our startup vision.",
+        achievements: "Highlight: Delivered a high-impact startup pitch for our project, FreshFlow, which was recognized as the best in the cohort. Successfully integrated Generative AI tools to streamline the development lifecycle.",
+        skills: ["Startup Pitching", "FreshFlow Development", "Prompt Engineering", "AI Integration"]
     },
     4: {
         title: "WEEK 4: GATEPASS_SECURITY",
