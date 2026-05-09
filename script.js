@@ -53,6 +53,30 @@ document.addEventListener('DOMContentLoaded', () => {
         section.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
         observer.observe(section);
     });
+
+    // PROGRESS BAR ANIMATION
+    setTimeout(() => {
+        const progressFill = document.getElementById('progress-fill');
+        const percentVal = document.getElementById('percent-val');
+        const targetPercent = 66; // (166 / 252) * 100
+        
+        progressFill.style.width = `${targetPercent}%`;
+        
+        // Counter animation for percentage
+        let current = 0;
+        const duration = 1500; // Match CSS transition
+        const increment = targetPercent / (duration / 16);
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= targetPercent) {
+                percentVal.textContent = targetPercent;
+                clearInterval(timer);
+            } else {
+                percentVal.textContent = Math.floor(current);
+            }
+        }, 16);
+    }, 500);
 });
 
 // MODAL DATA & LOGIC

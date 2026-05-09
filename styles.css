@@ -139,6 +139,72 @@ body {
     line-height: 1.4;
 }
 
+/* MISSION PROGRESS TRACKER */
+.mission-progress-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+    border: var(--border-thick);
+    padding: 1.5rem;
+    background: #222;
+    box-shadow: var(--shadow-green);
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-family: var(--font-header);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.progress-title {
+    color: var(--accent-green);
+}
+
+.progress-bar-base {
+    width: 100%;
+    height: 30px;
+    background: #333;
+    border: 2px solid var(--text-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--accent-green);
+    width: 0%;
+    transition: width 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.progress-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: progress-shine 2s infinite;
+}
+
+@keyframes progress-shine {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
+
+.progress-percent {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
 .tactical-btn {
     display: inline-block;
     padding: 1rem 2rem;
