@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICT 252 Hour Internship | MISSION_CONTROL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- BACKGROUND GLOWS -->
+    <div class="glow-top-left"></div>
+    <div class="glow-bottom-right"></div>
+
+    <!-- DECORATIVE FLOATING ELEMENTS (JS will handle creation or we can hardcode a few) -->
+    <div class="grunge-svg skull" style="top: 15%; left: 5%;">💀</div>
+    <div class="grunge-svg bolt" style="top: 70%; right: 10%;">⚡</div>
+    <div class="grunge-svg bone" style="top: 40%; right: 5%;">🦴</div>
+
+    <nav class="mission-control">
+        <div class="nav-brand">DICT_252_HOUR_INTERNSHIP</div>
+        <ul class="nav-links">
+            <li><a href="#project-ops">PROJECT OPS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-log">
+            <h1 class="glitch-text">DICT 252 HOUR<br>INTERNSHIP</h1>
+            <p class="hero-intel">SYSTEM STATUS: ACTIVE // DEPLOYMENT IN PROGRESS</p>
+            <div class="hero-actions">
+                <a href="#project-ops" class="tactical-btn">VIEW_DEPLOYMENT</a>
+            </div>
+        </section>
+
+        <!-- PROJECT OPS (9-Week Grid) -->
+        <section id="project-ops" class="ops-section">
+            <h2 class="section-title">PROJECT OPS</h2>
+            <div class="ops-grid">
+                <!-- WEEK 1 -->
+                <article class="ops-card" data-week="01" onclick="openModal(1)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 01</span>
+                        <h3 class="ops-title">WEEK 1: DESIGN_INIT</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Designing graphic templates and promotional posters for DICT's Facebook page while mentoring Grade 12 Work Immersion students from Culianan National High School.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 2 -->
+                <article class="ops-card" data-week="02" onclick="openModal(2)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 02</span>
+                        <h3 class="ops-title">WEEK 2: UI_UX_ITERATION</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Advancing visual projects in Canva, transitioning from basic functionality to professional UI/UX layout design based on iterative supervisor feedback.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 3 -->
+                <article class="ops-card" data-week="03" onclick="openModal(3)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 03</span>
+                        <h3 class="ops-title">WEEK 3: PROMPT_ENGINEERING</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Specialized training in Generative AI and Startup Pitching. Mastered Prompt Engineering techniques, securing top-tier scores in competitive challenges.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 4 -->
+                <article class="ops-card" data-week="04" onclick="openModal(4)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 04</span>
+                        <h3 class="ops-title">WEEK 4: GATEPASS_SECURITY</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Refactoring the Gate Pass Management System. Implemented anti-deletion features and optimized camera scanning logic for hardware-software integration.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 5 -->
+                <article class="ops-card" data-week="05" onclick="openModal(5)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 05</span>
+                        <h3 class="ops-title">WEEK 5: SYSTEM_HARDENING</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Achieved 100% completion for anti-deletion and encryption modules. Pivoted from face recognition to prioritize core stability and data integrity.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 6 -->
+                <article class="ops-card" data-week="06" onclick="openModal(6)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 06</span>
+                        <h3 class="ops-title">WEEK 6: REAL_WORLD_CHECK</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Iterative "demo and fix" loop with supervisor. Focused on simplifying the interface for non-tech staff based on practical workplace evaluation.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 7 -->
+                <article class="ops-card" data-week="07" onclick="openModal(7)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 07</span>
+                        <h3 class="ops-title">WEEK 7: CREATIVE_PROD</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Designing official promotional assets for the "Summer Bootcamp". Balancing "programmer brain" with "designer brain" for community outreach.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 8 -->
+                <article class="ops-card" data-week="08" onclick="openModal(8)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 08</span>
+                        <h3 class="ops-title">WEEK 8: RESOURCE_SPEAKER</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Conducted live training on Prompt Engineering and AI Ethics for an adult audience. Transitioned from developer to technical resource speaker.</p>
+                    </div>
+                </article>
+
+                <!-- WEEK 9 -->
+                <article class="ops-card" data-week="09" onclick="openModal(9)">
+                    <div class="ops-header">
+                        <span class="ops-label">PHASE 09</span>
+                        <h3 class="ops-title">WEEK 9: MENTORSHIP</h3>
+                    </div>
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
+                    <div class="ops-intel">
+                        <p>Led specialized training at ZPPSU on responsible AI use for students. Finalized internship outputs and bridged technical expertise with community education.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- MISSION_MODAL -->
+    <div id="mission-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">CLOSE_SYSTEM</button>
+            <div id="modal-body" class="modal-body">
+                <!-- DYNAMIC CONTENT HERE -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="mission-footer">
+        <p>© 2026 // INTERNSHIP JOURNEY // STATUS: ONLINE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
