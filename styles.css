@@ -26,14 +26,14 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
-    line-height: 1.4;
+    line-height: 1.35;
     overflow-x: hidden;
 }
 
@@ -118,36 +118,36 @@ body {
 
 /* HERO SECTION */
 .hero-log {
-    padding: 4rem 5% 2rem;
+    padding: 3rem 5% 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 .glitch-text {
     font-family: var(--font-header);
-    font-size: clamp(2rem, 7vw, 5rem);
-    line-height: 1.1; /* Increased from 0.9 */
+    font-size: clamp(1.75rem, 6vw, 4rem);
+    line-height: 1.1;
     text-transform: uppercase;
-    letter-spacing: -1px; /* Less aggressive negative spacing */
+    letter-spacing: -1px;
 }
 
 .hero-intel {
     font-weight: 400;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     opacity: 0.8;
     line-height: 1.3;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 /* MISSION PROGRESS TRACKER */
 .mission-progress-container {
     width: 100%;
-    max-width: 450px;
-    margin: 1rem 0;
+    max-width: 400px;
+    margin: 0.75rem 0;
     border: var(--border-thick);
-    padding: 1rem;
+    padding: 0.85rem;
     background: #222;
     box-shadow: var(--shadow-green);
 }
@@ -155,12 +155,12 @@ body {
 .progress-labels {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     font-family: var(--font-header);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .progress-title {
@@ -169,7 +169,7 @@ body {
 
 .progress-bar-base {
     width: 100%;
-    height: 20px;
+    height: 18px;
     background: #333;
     border: 2px solid var(--text-color);
     position: relative;
@@ -201,8 +201,8 @@ body {
 }
 
 .progress-percent {
-    margin-top: 0.6rem;
-    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    font-size: 0.65rem;
     font-weight: 700;
     opacity: 0.7;
     letter-spacing: 1px;
@@ -210,7 +210,7 @@ body {
 
 .tactical-btn {
     display: inline-block;
-    padding: 0.7rem 1.25rem;
+    padding: 0.6rem 1rem;
     background: var(--accent-green);
     color: #000;
     text-decoration: none;
@@ -219,46 +219,46 @@ body {
     border: var(--border-thick);
     box-shadow: var(--shadow-white);
     transition: all 0.2s;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .tactical-btn:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 10px 10px 0 var(--accent-purple);
+    box-shadow: 8px 8px 0 var(--accent-purple);
 }
 
 /* SECTION TITLES */
 .section-title {
     font-family: var(--font-header);
-    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     line-height: 1.1;
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    border-left: 6px solid var(--accent-green);
-    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--accent-green);
+    padding-left: 0.85rem;
     letter-spacing: -1px;
 }
 
 /* PROJECT OPS GRID */
 .ops-section {
-    padding: 2.5rem 5%;
+    padding: 2rem 5%;
 }
 
 .ops-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .ops-card {
     background: #222;
     border: var(--border-thick);
-    padding: 1.5rem 1.25rem;
+    padding: 1.25rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1rem;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     height: 100%;
