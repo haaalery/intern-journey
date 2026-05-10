@@ -4,11 +4,11 @@
     --accent-green: #39ff14;
     --accent-purple: #bc13fe;
     
-    --border-thick: 4px solid var(--text-color); /* Thicker borders */
+    --border-thick: 4px solid var(--text-color);
     --border-green: 4px solid var(--accent-green);
     --border-purple: 4px solid var(--accent-purple);
     
-    --shadow-green: 12px 12px 0 var(--accent-green); /* Larger shadows */
+    --shadow-green: 12px 12px 0 var(--accent-green);
     --shadow-purple: 12px 12px 0 var(--accent-purple);
     --shadow-white: 12px 12px 0 var(--text-color);
     
@@ -16,9 +16,7 @@
     --font-body: 'Space Grotesk', sans-serif;
 }
 
-/* VERSION: 1.1.7-CINEMA-POLISH */
-
-/* ... (rest of :root unchanged) ... */
+/* VERSION: 1.1.7-ULTRA-FINAL */
 
 /* GLITCH ANIMATION FOR STATUS */
 @keyframes statusGlitch {
@@ -35,36 +33,12 @@
     font-weight: 800;
 }
 
-/* MISSION BRIEFING */
-.mission-briefing {
-    max-width: 700px;
-    font-size: 1.1rem;
-    opacity: 0.7;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    border-left: 3px solid rgba(255,255,255,0.1);
-    padding-left: 1.5rem;
-}
-
-/* DATA MISSING PLACEHOLDER */
-.ops-media.missing-data {
-    background: repeating-linear-gradient(
-        45deg,
-        #222,
-        #222 10px,
-        #252525 10px,
-        #252525 20px
-    );
-    border: 2px dashed rgba(255,255,255,0.1);
-}
-
-.placeholder-text {
-    font-family: var(--font-header);
-    color: var(--accent-purple);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: 0.5;
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0 !important;
 }
 
 html {
@@ -184,10 +158,20 @@ body {
     font-size: 1.4rem;
 }
 
+.mission-briefing {
+    max-width: 900px;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    border-left: 5px solid rgba(255,255,255,0.1);
+    padding-left: 2rem;
+}
+
 /* MISSION PROGRESS TRACKER */
 .mission-progress-container {
     width: 100%;
-    max-width: 850px; /* Scaled up */
+    max-width: 850px; 
     margin: 3rem 0;
     border: var(--border-thick);
     padding: 2rem;
@@ -288,7 +272,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-    max-width: 1820px; /* Scaled +40% from 1300px */
+    max-width: 1820px; 
     margin: 0 auto;
 }
 
@@ -297,7 +281,7 @@ body {
     border: 3px solid rgba(255, 255, 255, 0.2);
     padding: 3rem;
     display: grid;
-    grid-template-columns: 170px 1fr; /* Scaled +40% from 120px */
+    grid-template-columns: 170px 1fr; 
     align-items: center;
     gap: 3.5rem;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -359,17 +343,31 @@ body {
     overflow: hidden;
 }
 
+.ops-media.missing-data {
+    background: repeating-linear-gradient(
+        45deg,
+        #222,
+        #222 10px,
+        #252525 10px,
+        #252525 20px
+    );
+    border: 2px dashed rgba(255,255,255,0.1);
+}
+
+.placeholder-text {
+    font-family: var(--font-header);
+    color: var(--accent-purple);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    text-align: center;
+}
+
 .ops-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.media-placeholder {
-    font-size: 0.9rem;
-    font-weight: 700;
-    opacity: 0.5;
-    text-align: center;
 }
 
 .ops-intel {
@@ -414,7 +412,7 @@ body {
     background: var(--bg-color);
     border: var(--border-thick);
     width: 95%;
-    max-width: 1400px; /* Scaled up */
+    max-width: 1400px; 
     max-height: 95vh;
     overflow-y: auto;
     position: relative;
@@ -444,7 +442,7 @@ body {
 
 .modal-image-container {
     width: 100%;
-    height: 630px; /* Scaled up */
+    height: 630px; 
     background: #222;
     border-bottom: var(--border-thick);
     overflow: hidden;
