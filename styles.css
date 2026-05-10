@@ -32,7 +32,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
-    line-height: 1.6;
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
@@ -81,7 +81,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
+    padding: 1.5rem 5%;
     border-bottom: var(--border-thick);
     background: var(--bg-color);
     position: sticky;
@@ -91,7 +91,7 @@ body {
 
 .nav-brand {
     font-family: var(--font-header);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: -1px;
 }
@@ -99,7 +99,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-links a {
@@ -107,7 +107,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: color 0.2s;
 }
 
@@ -117,16 +117,16 @@ body {
 
 /* HERO SECTION */
 .hero-log {
-    padding: 8rem 5% 4rem;
+    padding: 6rem 5% 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .glitch-text {
     font-family: var(--font-header);
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(2.5rem, 8vw, 6rem);
     line-height: 1.1; /* Increased from 0.9 */
     text-transform: uppercase;
     letter-spacing: -2px; /* Less aggressive negative spacing */
@@ -137,15 +137,16 @@ body {
     letter-spacing: 2px;
     opacity: 0.8;
     line-height: 1.4;
+    font-size: 0.9rem;
 }
 
 /* MISSION PROGRESS TRACKER */
 .mission-progress-container {
     width: 100%;
-    max-width: 600px;
-    margin: 2rem 0;
+    max-width: 500px;
+    margin: 1.5rem 0;
     border: var(--border-thick);
-    padding: 1.5rem;
+    padding: 1.25rem;
     background: #222;
     box-shadow: var(--shadow-green);
 }
@@ -153,11 +154,12 @@ body {
 .progress-labels {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-family: var(--font-header);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
 .progress-title {
@@ -166,7 +168,7 @@ body {
 
 .progress-bar-base {
     width: 100%;
-    height: 30px;
+    height: 24px;
     background: #333;
     border: 2px solid var(--text-color);
     position: relative;
@@ -198,8 +200,8 @@ body {
 }
 
 .progress-percent {
-    margin-top: 1rem;
-    font-size: 0.8rem;
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
     font-weight: 700;
     opacity: 0.7;
     letter-spacing: 1px;
@@ -207,7 +209,7 @@ body {
 
 .tactical-btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     background: var(--accent-green);
     color: #000;
     text-decoration: none;
@@ -216,6 +218,7 @@ body {
     border: var(--border-thick);
     box-shadow: var(--shadow-white);
     transition: all 0.2s;
+    font-size: 0.9rem;
 }
 
 .tactical-btn:hover {
@@ -226,33 +229,33 @@ body {
 /* SECTION TITLES */
 .section-title {
     font-family: var(--font-header);
-    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
     line-height: 1.1;
     text-transform: uppercase;
-    margin-bottom: 3rem;
-    border-left: 10px solid var(--accent-green);
-    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-left: 8px solid var(--accent-green);
+    padding-left: 1.25rem;
     letter-spacing: -2px;
 }
 
 /* PROJECT OPS GRID */
 .ops-section {
-    padding: 4rem 5%;
+    padding: 3rem 5%;
 }
 
 .ops-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* FORCED 3-3-3 LAYOUT */
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .ops-card {
     background: #222;
     border: var(--border-thick);
-    padding: 3rem 2.5rem; /* Increased padding */
+    padding: 2rem 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5rem;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     height: 100%;
@@ -267,7 +270,7 @@ body {
 }
 
 .ops-card:hover {
-    transform: translateY(-12px) rotate(1deg);
+    transform: translateY(-8px) rotate(1deg);
     border-color: var(--accent-green);
     z-index: 10;
 }
@@ -275,11 +278,11 @@ body {
 .ops-header {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .ops-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: var(--accent-green);
     letter-spacing: 2px;
@@ -287,7 +290,7 @@ body {
 
 .ops-title {
     font-family: var(--font-header);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.2;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -295,7 +298,7 @@ body {
 
 .ops-media {
     width: 100%;
-    height: 200px;
+    height: 160px;
     background: #333;
     border: 2px dashed #555;
     display: flex;
@@ -306,14 +309,14 @@ body {
 }
 
 .media-placeholder {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     opacity: 0.5;
     text-transform: uppercase;
 }
 
 .ops-intel p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     opacity: 0.9;
     line-height: 1.5;
     overflow-wrap: break-word;
@@ -321,7 +324,7 @@ body {
 
 /* FOOTER */
 .mission-footer {
-    padding: 4rem 5%;
+    padding: 2rem 5%;
     border-top: var(--border-thick);
     text-align: center;
     font-weight: 700;
@@ -349,12 +352,12 @@ body {
     background: var(--bg-color);
     border: var(--border-thick);
     width: 90%;
-    max-width: 800px;
-    max-height: 80vh;
+    max-width: 700px;
+    max-height: 85vh;
     overflow-y: auto;
     position: relative;
-    padding: 3rem;
-    box-shadow: 20px 20px 0 var(--accent-purple);
+    padding: 2rem;
+    box-shadow: 12px 12px 0 var(--accent-purple);
     animation: modalSlide 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -370,38 +373,39 @@ body {
     float: right;
     background: var(--accent-green);
     border: 2px solid #000;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
     z-index: 10;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .modal-body h2 {
     font-family: var(--font-header);
     color: var(--accent-green);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     line-height: 1.1;
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(1.25rem, 4vw, 2rem);
 }
 
 .modal-body h3 {
     border-bottom: 2px solid var(--accent-purple);
-    padding-bottom: 0.5rem;
-    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.4rem;
+    margin: 1.5rem 0 0.75rem;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--accent-purple);
     line-height: 1.2;
 }
 
 .modal-body p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
     opacity: 0.9;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .modal-skills-list {
