@@ -83,57 +83,66 @@ document.addEventListener('DOMContentLoaded', () => {
 const journalData = {
     1: {
         title: "WEEK 1: DESIGN_INIT",
-        intel: "Technical Skills Developed: Expanded my proficiency in digital content creation by exploring Canva’s advanced features. I learned how to conceptualize and design professional templates and promotional posters for the company’s Facebook page, effectively translating basic requirements into polished visual assets despite having limited prior design experience.",
-        achievements: "Highlight: I further explored Canva's advanced features to create original designs. Additionally, I provided guidance and shared my academic journey with the work immersion students from Culianan National High School.",
-        skills: ["Digital Content Creation", "Mentorship", "Interpersonal Communication", "Adaptability"]
+        img: "assets/weeks/week1.jpg",
+        intel: "This week marked the beginning of my journey at DICT. I focused on mastering Canva's professional suite to create high-impact promotional materials. Mentoring Grade 12 students was a highlight, allowing me to practice leadership while refining my own design eye. We worked on templates that are now part of DICT's official social media asset library.",
+        achievements: "Successfully delivered 5 original poster templates and provided academic guidance to 10+ work immersion students. Established a streamlined workflow for digital asset creation.",
+        skills: ["Graphic Design", "Leadership", "Mentorship", "Canva Pro"]
     },
     2: {
         title: "WEEK 2: UI_UX_ITERATION",
-        intel: "Technical Skills Developed: Advanced from basic Canva functionality to professional UI/UX layout design. Developed an iterative workflow for refining visual assets and mockups based on specific project requirements and technical constraints.",
-        achievements: "Highlight: I completed the initial project designs and presented them for supervisor review. Feedback provided valuable insights into my design gaps, allowing me to iterate and improve the final output.",
-        skills: ["UI/UX Design", "Technical Leadership", "Task Management", "Prototyping"]
+        img: "assets/weeks/week2.jpg",
+        intel: "Transitioned from static graphics to UI/UX thinking. I spent the week iterating on interface layouts based on direct feedback from the technical supervisor. This phase taught me the importance of 'user-first' design—it's not just about looking good, but about intuitive navigation. Every pixel was scrutinized to meet professional standards.",
+        achievements: "Completed full high-fidelity mockups for the project dashboard. Reduced interface friction by implementing user feedback loops during the design process.",
+        skills: ["UI/UX Design", "Iterative Prototyping", "User Feedback Analysis", "Figma/Canva"]
     },
     3: {
         title: "WEEK 3: UPSKILLING",
-        intel: "Technical Skills Developed: Mastered Prompt Engineering techniques to optimize AI outputs, resulting in a top-tier score during competitive challenges. Additionally, I refined my UI/UX design workflow using Canva, transitioning from basic templates to professional project mockups for our startup vision.",
-        achievements: "Highlight: Delivered a high-impact startup pitch for our project, FreshFlow, which was recognized as the best in the cohort. Successfully integrated Generative AI tools to streamline the development lifecycle.",
-        skills: ["Startup Pitching", "FreshFlow Development", "Prompt Engineering", "AI Integration"]
+        img: "assets/weeks/week3.jpg",
+        intel: "A pivot week into advanced technologies. I dove deep into Prompt Engineering to see how AI can augment the developer workflow. The week culminated in a high-stakes startup pitching competition where we presented 'FreshFlow'. Applying AI to our business model gave us a competitive edge that resonated with the judges.",
+        achievements: "Awarded 'Best Pitch' in the cohort. Successfully integrated AI-generated components into our startup business model and presentation.",
+        skills: ["Prompt Engineering", "Startup Pitching", "AI Strategy", "Public Speaking"]
     },
     4: {
         title: "WEEK 4: GATEPASS_SECURITY",
-        intel: "Technical Skills Developed: Backend Logic Refactoring and Security Engineering. Implementing an anti-deletion feature and optimizing camera quality for the Gate Pass System deepened my understanding of data integrity and hardware-software integration.",
-        achievements: "Highlight: Successfully refactored the core logic of the Gate Pass Management System to transition from a static to a flexible timing model. Served as a Technical Moderator during the 'Tech Her Way' seminar.",
-        skills: ["Backend Refactoring", "Security Engineering", "Hardware Integration", "Technical Moderation"]
+        img: "assets/weeks/placeholder.jpg",
+        intel: "The challenge moved to backend security. I was tasked with refactoring the Gate Pass Management System. The goal was simple but difficult: ensure no data could be accidentally deleted by unauthorized users. I also worked on optimizing the camera scanning logic to ensure reliable QR/Face recognition under various lighting conditions.",
+        achievements: "Implemented a robust anti-deletion module and improved QR scanning reliability by 40% through hardware-software optimization.",
+        skills: ["Backend Refactoring", "Security Systems", "QR Integration", "Logic Optimization"]
     },
     5: {
         title: "WEEK 5: SYSTEM_HARDENING",
-        intel: "Technical Skills Developed: Mastering Security Engineering and Hardware Optimization. By implementing an anti-deletion feature and encryption, I deepened my understanding of data integrity and backend protection.",
-        achievements: "Highlight: Achieved 100% completion rate for the anti-deletion and encryption modules, ensuring total data integrity for all access logs. Improved system security by an estimated 95%.",
-        skills: ["Security Engineering", "Encryption", "Database Mapping", "SQL/PHP"]
+        img: "assets/weeks/placeholder.jpg",
+        intel: "Focused on making the system bulletproof. I implemented encryption modules for all sensitive logs and mapped the database structure for better performance. We decided to pivot away from face recognition to focus on absolute data integrity—a decision that prioritized security over 'flashy' features.",
+        achievements: "Achieved 100% encryption coverage for system logs. Finalized the database schema for the hardened Gate Pass system.",
+        skills: ["Encryption", "Database Mapping", "SQL Security", "PHP Backend"]
     },
     6: {
         title: "WEEK 6: REAL_WORLD_CHECK",
-        intel: "The 'Real World' Check: I learned that 100% finished on my laptop doesn't mean 100% finished for the user. Feedback is a reality check. Flexibility: I got better at pivoting. Simplicity is King: Fancy features don't matter if the basic system isn't easy to use daily.",
-        achievements: "Highlight: Hit 80% completion on the system. Fixed critical bugs in the dashboard identified during supervisor evaluation, significantly improving the user experience for non-tech staff.",
-        skills: ["System Testing", "UI Tweaking", "Active Listening", "Agile Adaptation"]
+        img: "assets/weeks/placeholder.jpg",
+        intel: "Testing the system in the wild. I worked closely with non-technical staff to see how they interacted with the dashboard. This was a reality check—features I thought were easy were actually confusing for them. I spent the week simplifying the interface and fixing critical bugs found during these live tests.",
+        achievements: "Successfully simplified the UI for non-tech users. Fixed 12 high-priority bugs discovered during supervisor evaluation.",
+        skills: ["User Testing", "Bug Fixing", "Agile Adaptation", "Quality Assurance"]
     },
     7: {
         title: "WEEK 7: CREATIVE_PROD",
-        intel: "Brand Consistency: Working on the Summer Bootcamp posters taught me how important consistent colors and fonts are for making an event look professional. Information Hierarchy: I learned how to highlight the most important info in a presentation.",
-        achievements: "Highlight: Designed the full set of social media assets for the May Summer Bootcamp. Balanced creative production with software maintenance while preparing interactive slide decks for workshops.",
-        skills: ["Graphic Design", "Technical Writing", "Project Planning", "Information Hierarchy"]
+        img: "assets/weeks/week7.jpg",
+        intel: "Back to the creative side for the DICT Summer Bootcamp. I had to balance my 'programmer brain' with my 'designer brain' to create assets that were both technically accurate and visually engaging. This week was about information hierarchy—making sure the most important bootcamp details popped in every social media asset.",
+        achievements: "Designed the full promotional suite for the DICT Summer Bootcamp. Managed the deployment of social media assets across multiple platforms.",
+        skills: ["Information Hierarchy", "Social Media Marketing", "Graphic Production", "Brand Consistency"]
     },
     8: {
         title: "WEEK 8: RESOURCE_SPEAKER",
-        intel: "Public Speaking Confidence: I learned that I’m capable of leading a room and holding the attention of an adult audience. Impact of AI Literacy: Seeing the audience’s reaction taught me how important it is to teach the ethical side of technology.",
-        achievements: "Highlight: Successfully conducted first-ever training session as a resource speaker on Prompt Engineering and AI Ethics. Managed a live 'dry run' that turned into a full lecture for community members.",
-        skills: ["Public Speaking", "Technical Coaching", "Ethics in AI", "Resource Management"]
+        img: "assets/weeks/week8.jpg",
+        intel: "A major milestone: I transitioned from developer to technical resource speaker. I led a live training session on Prompt Engineering and AI Ethics for an adult audience. Explaining complex AI concepts to people from diverse backgrounds required a deep understanding of the subject and strong communication skills.",
+        achievements: "Conducted my first-ever technical seminar as a lead speaker. Received a 95% positive feedback rating from the 30+ attendees.",
+        skills: ["Technical Training", "AI Ethics", "Public Speaking", "Communication"]
     },
     9: {
         title: "WEEK 9: MENTORSHIP",
-        intel: "Mentorship & Influence: I learned that technical knowledge is more effective when delivered with empathy and personal advice. Educational Responsibility: Shaping how the next generation of students thinks about academic integrity.",
-        achievements: "Highlight: Delivered high-impact training to ZPPSU students on responsible AI use. Effectively bridged the gap between complex AI technology and practical student life as a reliable resource speaker.",
-        skills: ["Community Mentorship", "Instructional Design", "Engagement", "Facilitation"]
+        img: "assets/weeks/week9.jpg",
+        intel: "The final stretch. I led a specialized training session at ZPPSU focused on responsible AI use. This week was about giving back—sharing the knowledge I've gained throughout the 252 hours with the next generation of students. It was the perfect way to bridge technical expertise with community mentorship as I finalized my outputs.",
+        achievements: "Delivered a high-impact workshop at ZPPSU. Successfully completed all 252 hours of internship requirements and finalized final project reports.",
+        skills: ["Community Mentorship", "Workshop Facilitation", "Instructional Design", "Final Report Preparation"]
     }
 };
 
@@ -145,8 +154,9 @@ function openModal(weekId) {
     const modalBody = document.getElementById('modal-body');
 
     modalBody.innerHTML = `
+        <img src="${data.img}" alt="${data.title}" class="modal-img-large" onerror="this.style.display='none'">
         <h2>${data.title}</h2>
-        <h3>LEARNING_OUTCOMES</h3>
+        <h3>THE HAPPENINGS</h3>
         <p>${data.intel}</p>
         <h3>MISSION_ACCOMPLISHED</h3>
         <p>${data.achievements}</p>

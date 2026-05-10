@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Syne:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=1.0.5">
+    <link rel="stylesheet" href="styles.css?v=1.0.6">
 </head>
 <body>
     <!-- BACKGROUND GLOWS -->
     <div class="glow-top-left"></div>
     <div class="glow-bottom-right"></div>
 
-    <!-- DECORATIVE FLOATING ELEMENTS (JS will handle creation or we can hardcode a few) -->
+    <!-- DECORATIVE FLOATING ELEMENTS -->
     <div class="grunge-svg skull" style="top: 15%; left: 5%;">💀</div>
     <div class="grunge-svg bolt" style="top: 70%; right: 10%;">⚡</div>
     <div class="grunge-svg bone" style="top: 40%; right: 5%;">🦴</div>
@@ -49,18 +49,19 @@
             </div>
         </section>
 
-        <!-- PROJECT OPS (9-Week Grid) -->
+        <!-- PROJECT OPS (2-Column Grid) -->
         <section id="project-ops" class="ops-section">
             <h2 class="section-title">PROJECT OPS</h2>
             <div class="ops-grid">
                 <!-- WEEK 1 -->
                 <article class="ops-card" data-week="01" onclick="openModal(1)">
+                    <div class="ops-media">
+                        <img src="assets/weeks/week1.jpg" alt="Week 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="media-placeholder" style="display:none;">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 01</span>
                         <h3 class="ops-title">WEEK 1: DESIGN_INIT</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Designing graphic templates and promotional posters for DICT's Facebook page while mentoring Grade 12 Work Immersion students from Culianan National High School.</p>
@@ -69,12 +70,13 @@
 
                 <!-- WEEK 2 -->
                 <article class="ops-card" data-week="02" onclick="openModal(2)">
+                    <div class="ops-media">
+                        <img src="assets/weeks/week2.jpg" alt="Week 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="media-placeholder" style="display:none;">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 02</span>
                         <h3 class="ops-title">WEEK 2: UI_UX_ITERATION</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Advancing visual projects in Canva, transitioning from basic functionality to professional UI/UX layout design based on iterative supervisor feedback.</p>
@@ -83,12 +85,13 @@
 
                 <!-- WEEK 3 -->
                 <article class="ops-card" data-week="03" onclick="openModal(3)">
+                    <div class="ops-media">
+                        <img src="assets/weeks/week3.jpg" alt="Week 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="media-placeholder" style="display:none;">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 03</span>
                         <h3 class="ops-title">WEEK 3: UPSKILLING</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Engaged in specialized training for Generative AI and Startup Pitching. Successfully delivered the best pitch in the cohort for our project, FreshFlow.</p>
@@ -97,12 +100,12 @@
 
                 <!-- WEEK 4 -->
                 <article class="ops-card" data-week="04" onclick="openModal(4)">
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 04</span>
                         <h3 class="ops-title">WEEK 4: GATEPASS_SECURITY</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Refactoring the Gate Pass Management System. Implemented anti-deletion features and optimized camera scanning logic for hardware-software integration.</p>
@@ -111,12 +114,12 @@
 
                 <!-- WEEK 5 -->
                 <article class="ops-card" data-week="05" onclick="openModal(5)">
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 05</span>
                         <h3 class="ops-title">WEEK 5: SYSTEM_HARDENING</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Achieved 100% completion for anti-deletion and encryption modules. Pivoted from face recognition to prioritize core stability and data integrity.</p>
@@ -125,12 +128,12 @@
 
                 <!-- WEEK 6 -->
                 <article class="ops-card" data-week="06" onclick="openModal(6)">
+                    <div class="ops-media">
+                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 06</span>
                         <h3 class="ops-title">WEEK 6: REAL_WORLD_CHECK</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Iterative "demo and fix" loop with supervisor. Focused on simplifying the interface for non-tech staff based on practical workplace evaluation.</p>
@@ -139,12 +142,13 @@
 
                 <!-- WEEK 7 -->
                 <article class="ops-card" data-week="07" onclick="openModal(7)">
+                    <div class="ops-media">
+                        <img src="assets/weeks/week7.jpg" alt="Week 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="media-placeholder" style="display:none;">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 07</span>
                         <h3 class="ops-title">WEEK 7: CREATIVE_PROD</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Designing official promotional assets for the "Summer Bootcamp". Balancing "programmer brain" with "designer brain" for community outreach.</p>
@@ -153,12 +157,13 @@
 
                 <!-- WEEK 8 -->
                 <article class="ops-card" data-week="08" onclick="openModal(8)">
+                    <div class="ops-media">
+                        <img src="assets/weeks/week8.jpg" alt="Week 8" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="media-placeholder" style="display:none;">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 08</span>
                         <h3 class="ops-title">WEEK 8: RESOURCE_SPEAKER</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Conducted live training on Prompt Engineering and AI Ethics for an adult audience. Transitioned from developer to technical resource speaker.</p>
@@ -167,12 +172,13 @@
 
                 <!-- WEEK 9 -->
                 <article class="ops-card" data-week="09" onclick="openModal(9)">
+                    <div class="ops-media">
+                        <img src="assets/weeks/week9.jpg" alt="Week 9" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="media-placeholder" style="display:none;">IMAGE_UPLOAD_PENDING</div>
+                    </div>
                     <div class="ops-header">
                         <span class="ops-label">PHASE 09</span>
                         <h3 class="ops-title">WEEK 9: MENTORSHIP</h3>
-                    </div>
-                    <div class="ops-media">
-                        <div class="media-placeholder">IMAGE_UPLOAD_PENDING</div>
                     </div>
                     <div class="ops-intel">
                         <p>Led specialized training at ZPPSU on responsible AI use for students. Finalized internship outputs and bridged technical expertise with community education.</p>
