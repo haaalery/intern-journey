@@ -4,13 +4,13 @@
     --accent-green: #39ff14;
     --accent-purple: #bc13fe;
     
-    --border-thick: 4px solid var(--text-color);
-    --border-green: 4px solid var(--accent-green);
-    --border-purple: 4px solid var(--accent-purple);
+    --border-thick: 3px solid var(--text-color);
+    --border-green: 3px solid var(--accent-green);
+    --border-purple: 3px solid var(--accent-purple);
     
-    --shadow-green: 8px 8px 0 var(--accent-green);
-    --shadow-purple: 8px 8px 0 var(--accent-purple);
-    --shadow-white: 8px 8px 0 var(--text-color);
+    --shadow-green: 6px 6px 0 var(--accent-green);
+    --shadow-purple: 6px 6px 0 var(--accent-purple);
+    --shadow-white: 6px 6px 0 var(--text-color);
     
     --font-header: 'Syne', sans-serif;
     --font-body: 'Space Grotesk', sans-serif;
@@ -26,13 +26,14 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 14px;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
-    line-height: 1.5;
+    line-height: 1.4;
     overflow-x: hidden;
 }
 
@@ -81,7 +82,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     border-bottom: var(--border-thick);
     background: var(--bg-color);
     position: sticky;
@@ -91,7 +92,7 @@ body {
 
 .nav-brand {
     font-family: var(--font-header);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 800;
     letter-spacing: -1px;
 }
@@ -99,7 +100,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .nav-links a {
@@ -107,7 +108,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     transition: color 0.2s;
 }
 
@@ -117,36 +118,36 @@ body {
 
 /* HERO SECTION */
 .hero-log {
-    padding: 6rem 5% 3rem;
+    padding: 4rem 5% 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .glitch-text {
     font-family: var(--font-header);
-    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-size: clamp(2rem, 7vw, 5rem);
     line-height: 1.1; /* Increased from 0.9 */
     text-transform: uppercase;
-    letter-spacing: -2px; /* Less aggressive negative spacing */
+    letter-spacing: -1px; /* Less aggressive negative spacing */
 }
 
 .hero-intel {
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     opacity: 0.8;
-    line-height: 1.4;
-    font-size: 0.9rem;
+    line-height: 1.3;
+    font-size: 0.85rem;
 }
 
 /* MISSION PROGRESS TRACKER */
 .mission-progress-container {
     width: 100%;
-    max-width: 500px;
-    margin: 1.5rem 0;
+    max-width: 450px;
+    margin: 1rem 0;
     border: var(--border-thick);
-    padding: 1.25rem;
+    padding: 1rem;
     background: #222;
     box-shadow: var(--shadow-green);
 }
@@ -154,12 +155,12 @@ body {
 .progress-labels {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
     font-family: var(--font-header);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .progress-title {
@@ -168,7 +169,7 @@ body {
 
 .progress-bar-base {
     width: 100%;
-    height: 24px;
+    height: 20px;
     background: #333;
     border: 2px solid var(--text-color);
     position: relative;
@@ -200,8 +201,8 @@ body {
 }
 
 .progress-percent {
-    margin-top: 0.75rem;
-    font-size: 0.75rem;
+    margin-top: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 700;
     opacity: 0.7;
     letter-spacing: 1px;
@@ -209,7 +210,7 @@ body {
 
 .tactical-btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.25rem;
     background: var(--accent-green);
     color: #000;
     text-decoration: none;
@@ -218,44 +219,46 @@ body {
     border: var(--border-thick);
     box-shadow: var(--shadow-white);
     transition: all 0.2s;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .tactical-btn:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 12px 12px 0 var(--accent-purple);
+    transform: translate(-3px, -3px);
+    box-shadow: 10px 10px 0 var(--accent-purple);
 }
 
 /* SECTION TITLES */
 .section-title {
     font-family: var(--font-header);
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(1.75rem, 5vw, 3rem);
     line-height: 1.1;
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
-    border-left: 8px solid var(--accent-green);
-    padding-left: 1.25rem;
-    letter-spacing: -2px;
+    margin-bottom: 2rem;
+    border-left: 6px solid var(--accent-green);
+    padding-left: 1rem;
+    letter-spacing: -1px;
 }
 
 /* PROJECT OPS GRID */
 .ops-section {
-    padding: 3rem 5%;
+    padding: 2.5rem 5%;
 }
 
 .ops-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .ops-card {
     background: #222;
     border: var(--border-thick);
-    padding: 2rem 1.75rem;
+    padding: 1.5rem 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     height: 100%;
@@ -270,7 +273,7 @@ body {
 }
 
 .ops-card:hover {
-    transform: translateY(-8px) rotate(1deg);
+    transform: translateY(-6px) rotate(1deg);
     border-color: var(--accent-green);
     z-index: 10;
 }
@@ -278,27 +281,27 @@ body {
 .ops-header {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .ops-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     color: var(--accent-green);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .ops-title {
     font-family: var(--font-header);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.2;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .ops-media {
     width: 100%;
-    height: 160px;
+    height: 140px;
     background: #333;
     border: 2px dashed #555;
     display: flex;
@@ -309,28 +312,28 @@ body {
 }
 
 .media-placeholder {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     opacity: 0.5;
     text-transform: uppercase;
 }
 
 .ops-intel p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     opacity: 0.9;
-    line-height: 1.5;
+    line-height: 1.4;
     overflow-wrap: break-word;
 }
 
 /* FOOTER */
 .mission-footer {
-    padding: 2rem 5%;
+    padding: 1.5rem 5%;
     border-top: var(--border-thick);
     text-align: center;
     font-weight: 700;
     opacity: 0.6;
     letter-spacing: 2px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 /* MISSION_MODAL */
@@ -352,12 +355,12 @@ body {
     background: var(--bg-color);
     border: var(--border-thick);
     width: 90%;
-    max-width: 700px;
+    max-width: 650px;
     max-height: 85vh;
     overflow-y: auto;
     position: relative;
-    padding: 2rem;
-    box-shadow: 12px 12px 0 var(--accent-purple);
+    padding: 1.5rem;
+    box-shadow: 10px 10px 0 var(--accent-purple);
     animation: modalSlide 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -373,53 +376,53 @@ body {
     float: right;
     background: var(--accent-green);
     border: 2px solid #000;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
     z-index: 10;
-    margin-bottom: 1.5rem;
-    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.75rem;
 }
 
 .modal-body h2 {
     font-family: var(--font-header);
     color: var(--accent-green);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     text-transform: uppercase;
     line-height: 1.1;
-    font-size: clamp(1.25rem, 4vw, 2rem);
+    font-size: clamp(1.1rem, 3.5vw, 1.75rem);
 }
 
 .modal-body h3 {
     border-bottom: 2px solid var(--accent-purple);
-    padding-bottom: 0.4rem;
-    margin: 1.5rem 0 0.75rem;
+    padding-bottom: 0.3rem;
+    margin: 1.25rem 0 0.6rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--accent-purple);
     line-height: 1.2;
 }
 
 .modal-body p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
     opacity: 0.9;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .modal-skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
 }
 
 .modal-skill-item {
     background: #333;
-    padding: 0.3rem 0.8rem;
+    padding: 0.25rem 0.6rem;
     border: 1px solid var(--accent-green);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
@@ -427,11 +430,11 @@ body {
 @media (max-width: 768px) {
     .mission-control {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.75rem;
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .ops-grid {
