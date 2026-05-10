@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         const progressFill = document.getElementById('progress-fill');
         const percentVal = document.getElementById('percent-val');
-        const targetPercent = 66; // (166 / 252) * 100
+        const targetPercent = 100; // Finalized 252/252
         
         progressFill.style.width = `${targetPercent}%`;
         
@@ -71,9 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
             current += increment;
             if (current >= targetPercent) {
                 percentVal.textContent = targetPercent;
+                document.getElementById('current-hours').textContent = "252";
                 clearInterval(timer);
             } else {
                 percentVal.textContent = Math.floor(current);
+                document.getElementById('current-hours').textContent = Math.floor((current / 100) * 252);
             }
         }, 16);
     }, 500);
