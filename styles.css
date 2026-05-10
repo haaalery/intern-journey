@@ -16,12 +16,55 @@
     --font-body: 'Space Grotesk', sans-serif;
 }
 
-/* RESET & BASE */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border-radius: 0 !important;
+/* VERSION: 1.1.7-CINEMA-POLISH */
+
+/* ... (rest of :root unchanged) ... */
+
+/* GLITCH ANIMATION FOR STATUS */
+@keyframes statusGlitch {
+    0% { color: var(--accent-green); text-shadow: 0 0 5px var(--accent-green); }
+    92% { color: var(--accent-green); text-shadow: 0 0 5px var(--accent-green); }
+    94% { color: #fff; text-shadow: 2px 0 var(--accent-purple), -2px 0 var(--accent-green); }
+    96% { color: var(--accent-green); text-shadow: 0 0 5px var(--accent-green); }
+    98% { color: #fff; text-shadow: -2px 0 var(--accent-purple), 2px 0 var(--accent-green); }
+    100% { color: var(--accent-green); text-shadow: 0 0 5px var(--accent-green); }
+}
+
+.mission-complete-status {
+    animation: statusGlitch 4s infinite;
+    font-weight: 800;
+}
+
+/* MISSION BRIEFING */
+.mission-briefing {
+    max-width: 700px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    border-left: 3px solid rgba(255,255,255,0.1);
+    padding-left: 1.5rem;
+}
+
+/* DATA MISSING PLACEHOLDER */
+.ops-media.missing-data {
+    background: repeating-linear-gradient(
+        45deg,
+        #222,
+        #222 10px,
+        #252525 10px,
+        #252525 20px
+    );
+    border: 2px dashed rgba(255,255,255,0.1);
+}
+
+.placeholder-text {
+    font-family: var(--font-header);
+    color: var(--accent-purple);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.5;
 }
 
 html {
